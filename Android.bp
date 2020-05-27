@@ -19,7 +19,7 @@ cc_prebuilt_binary {
     device_supported: false,
     host_supported: true,
 
-    srcs: ["src/shflags"],
+    srcs: ["shflags"],
 
     relative_install_path: "lib/shflags",
 }
