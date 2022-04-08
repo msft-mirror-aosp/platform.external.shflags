@@ -7,13 +7,13 @@
 # '--name'). If a name is given, it is output, otherwise the default of 'world'
 # is output.
 
-# Source shflags.
-. ../shflags
+# source shflags
+. ../src/shflags
 
-# Define a 'name' command-line string flag.
+# define a 'name' command-line string flag
 DEFINE_string 'name' 'world' 'name to say hello to' 'n'
 
-# Parse the command-line.
+# parse the command-line
 FLAGS "$@" || exit 1
 eval set -- "${FLAGS_ARGV}"
 
